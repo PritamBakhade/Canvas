@@ -9,10 +9,10 @@ public class RectangleCommand implements CanvasCommand {
 
   public RectangleCommand(String args[]) {
     if (ApplicationCache.getInstance().getCanvas() == null) {
-      throw new IllegalStateException("canvas not created");
+      throw new IllegalStateException("Canvas not created");
     }
     if (args.length != 5) {
-      throw new IllegalArgumentException("expecting 4 parameters for draw rectangle command");
+      throw new IllegalArgumentException("Four parameters needed to draw rectangle");
     }
     this.rectangle = new Rectangle(
       Integer.parseInt(args[1]),

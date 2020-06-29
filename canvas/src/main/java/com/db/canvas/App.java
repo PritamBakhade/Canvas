@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class App {
   public static void main(String[] args) {
-    System.out.println("Draw A Canvas");
+    System.out.println("Draw Canvas");
     Scanner scanner = new Scanner(System.in);
     while (scanner.hasNextLine()) {
       String line = scanner.nextLine().trim();

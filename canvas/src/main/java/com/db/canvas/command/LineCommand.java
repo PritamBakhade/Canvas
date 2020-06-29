@@ -10,10 +10,10 @@ public class LineCommand implements CanvasCommand {
 
   public LineCommand(String[] args) {
     if (ApplicationCache.getInstance().getCanvas() == null) {
-      throw new IllegalStateException("canvas not created");
+      throw new IllegalStateException("Canvas not created");
     }
     if (args.length != 5) {
-      throw new IllegalArgumentException("expecting 4 parameters for draw line command");
+      throw new IllegalArgumentException("Four parameters needed in order to draw line");
     }
     this.line = new Line(Integer.parseInt(args[1]),Integer.parseInt(args[2]),Integer.parseInt(args[3]),Integer.parseInt(args[4]));
   }

@@ -11,8 +11,8 @@ public class Canvas {
     if (width <= 0 || height <= 0) {
       throw new IllegalArgumentException("Canvas width and height must be positive value");
     }
-    this.height = height;
-    this.width = width;
+    this.height = height+1;
+    this.width = width+1;
     this.grid = new char[this.height][this.width];
     initGrid();
   }
